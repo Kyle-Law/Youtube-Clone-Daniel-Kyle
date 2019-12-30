@@ -1,0 +1,80 @@
+.container{
+    display:grid;
+    height:600px;
+    grid-template-columns: 200px repeat(3,1fr);
+    grid-template-rows: 50px repeat(3,1fr);
+    grid-template-areas: 
+    "header header header header"
+    "sidebar content content content"
+    "sidebar content content content"
+    "sidebar content content content";
+}
+
+.header{
+    grid-area: header;
+    background-color: red;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: lightgoldenrodyellow;
+    grid-template-rows: repeat(20,50px);
+    display: grid;
+    overflow: scroll;
+}
+
+.content{
+    grid-area: content;
+    background-color: #f9f9f9;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 50px repeat(2,225px);
+    grid-template-areas: 
+    "recommended recommended recommended recommended"
+    "content content content content"
+    "content content content content";
+    grid-gap: 20px;
+    padding: 20px;
+}
+.title{
+    font-weight: bold;
+}
+.item{
+    border: 1px solid black;
+    display:grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+.caption{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.recommended{
+    grid-area: recommended;
+    align-self: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.wordy{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+}
+
+.view{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.side{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-content: center;
+}
+
+.image{
+    width: 100%;
+    margin-bottom: 10px;
+}
