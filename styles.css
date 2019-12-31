@@ -7,8 +7,15 @@
     "header header header header"
     "sidebar content content content"
     "sidebar content content content"
-    "sidebar content content content";
+    "sidebar content content content"; 
 }
+@media (max-width: 900px){
+    .container{
+        background: black;
+    }
+}
+
+
 
 .header{
     grid-area: header;
@@ -27,22 +34,24 @@
     grid-area: content;
     background-color: #f9f9f9;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 50px repeat(2,225px);
-    grid-template-areas: 
-    "recommended recommended recommended recommended"
-    "content content content content"
-    "content content content content";
+    grid-template-rows: 50px 1fr;
     grid-gap: 20px;
-    padding: 20px;
+    padding: 20px;  
 }
 .title{
     font-weight: bold;
 }
 .item{
     border: 1px solid black;
-    display:grid;
-    grid-template-rows: 2fr 1fr;
+    /* display:grid;
+    grid-template-rows: 2fr 1fr; */
+}
+
+.videos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 250px));
+    justify-content: center;
+    grid-auto-rows: 220px;
 }
 
 .caption{
@@ -51,8 +60,6 @@
 }
 
 .recommended{
-    grid-area: recommended;
-    align-self: center;
     font-size: 30px;
     font-weight: bold;
 }
