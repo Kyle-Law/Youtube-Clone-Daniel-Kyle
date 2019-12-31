@@ -10,8 +10,23 @@
     "sidebar content content content"; 
 }
 @media (max-width: 900px){
+    body{
+        background: pink;
+    }
+    
     .container{
-        background: black;
+        grid-template-columns: 200px repeat(3,1fr);
+    grid-template-rows: 50px 50px repeat(2,1fr);
+        grid-template-areas: 
+        "header header header header"
+    "sidebar sidebar sidebar sidebar"
+    "content content content content"
+    "content content content content"; 
+    }
+
+    .sidebar{
+        grid-template-columns: repeat(20,100px);
+        grid-gap:10px;
     }
 }
 
