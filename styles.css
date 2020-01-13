@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height:100%;
+}
+
+html{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item {
+    border: 1px solid black;
+}
+
+nav{
+    display: grid;
+    grid: 1fr / 38px 400px repeat(4,50px);
+    width: 100%;
+}
+
+.itemRight{
+    display: grid;
+    justify-self: end;
+}
