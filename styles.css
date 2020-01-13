@@ -19,11 +19,45 @@ html{
 
 nav{
     display: grid;
-    grid: 1fr / 38px 400px repeat(4,50px);
+    grid: 56px 1fr / 100px 1fr repeat(3,56px);
+    width: 100%;
+    grid-gap: 10px;
+    align-items: center;
+    padding: 0 10px;
+}
+
+nav>img{
+    height: 100%;
     width: 100%;
 }
 
-.itemRight{
-    display: grid;
+.icon{
+    border-radius: 100%;
     justify-self: end;
 }
+
+.icon-small{
+    width: 30px;
+}
+
+#search-bar {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+#search-bar > input {
+    width: 575px;
+    padding: 2px 8px;
+}
+
+#search-bar > img{
+    width: 65px;
+}
+
+/* .itemRight{
+    display: grid;
+    justify-self: end;
+} */
+
+
