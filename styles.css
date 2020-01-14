@@ -81,6 +81,10 @@ main{
     padding-left: 50px;
 }
 
+#video > iframe{
+    width: 100%;
+    height: 450px;
+}
 
 #video > h1 {
     font-size: 2rem; /*20px*/
