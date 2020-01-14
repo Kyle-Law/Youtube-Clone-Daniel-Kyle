@@ -1,8 +1,8 @@
-# Project Name
+# Youtube Clone Project
 
-> Youtube Clone
+> Youtube Clone - Microverse Collaborative Project
 
-![screenshot](./app_screenshot.png)
+![screenshot](./images/screenshot.png)
 
 Youtube Clone done by Kyle Law and Daniel Duran for educational purposes.
 
