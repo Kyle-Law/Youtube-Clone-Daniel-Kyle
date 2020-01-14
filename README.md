@@ -24,7 +24,7 @@ Youtube Clone done by Kyle Law and Daniel Duran for educational purposes.
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give a ⭐️ if you like this project!!
 
 ## Acknowledgments
 
