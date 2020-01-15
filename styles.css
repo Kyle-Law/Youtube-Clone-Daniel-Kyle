@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -64,6 +65,15 @@ nav > img {
   padding: 0 25px;
 }
 
+.author > img {
+  grid-row: span 2;
+}
+
+.video-grid > img {
+  display: grid;
+  grid-row: span 3;
+}
+
 .search-bar > button > img {
   height: 23px;
   width: 23px;
@@ -80,7 +90,7 @@ main{
 
 @media (min-width: 1000px) {
   main {
-    grid: 
+    grid:
       'video sidebar' max-content
       'video sidebar' max-content
       /5fr 3fr;
@@ -142,10 +152,6 @@ main{
   grid: repeat(2, 1fr) / 60px 1fr;
 }
 
-.author > img {
-  grid-row: span 2;
-}
-
 h4 {
   font-size: 1.5rem;
   font-weight: 600;
@@ -191,11 +197,6 @@ h4 {
   font-size: 2rem;
   font-weight: 400;
   margin-top: 20px;
-}
-
-.video-grid > img {
-  display: grid;
-  grid-row: span 3;
 }
 
 .video-grid > h1 {
