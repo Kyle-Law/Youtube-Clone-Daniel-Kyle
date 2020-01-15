@@ -13,6 +13,8 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Navbar Section */
+
 .item {
     border: 1px solid black;
 }
@@ -29,6 +31,7 @@ nav{
 nav>img{
     height: 100%;
     width: 100%;
+    margin-left: 40px;
 }
 
 .icon{
@@ -43,17 +46,25 @@ nav>img{
 #search-bar {
     display: flex;
     justify-content: center;
-    height: 40px;
+    height: 30px;
 }
 
 #search-bar > input {
     width: 575px;
     padding: 2px 8px;
+    font-size: 1.5rem;
 }
 
-#search-bar > img{
-    width: 40px;
+#search-bar > button{
+    width: 80px;
+    padding: 0 10px;
 }
+
+#search-bar > button > img {
+    width: 23px;
+    height: 23px;    
+}
+
 
 /* Main layout */
 main{
@@ -88,6 +99,8 @@ main{
 
 #video > h1 {
     font-size: 2rem; /*20px*/
+    font-weight: 400;
+    margin-top: 20px;
 }
 
 #video-details {
@@ -120,6 +133,45 @@ main{
     width: 100%;
 }
 
+/* Biography Section */
+#biography{
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    margin-top: 20px;
+}
+
+#author{
+    display: grid;
+    grid: 1fr 1fr / 60px 1fr;
+}
+
+#author > img{
+    grid-row: span 2;
+}
+
+#author > h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+#author > p {
+    font-size: 1.25rem;
+    color: lightslategrey;
+}
+
+#subscribe{
+    background-color: red;
+    color: white;
+    padding:10px;
+    text-align: center;
+    align-self: center;
+    font-size: 1.5rem;
+    height: 40px;
+    border-radius: 4px;
+}
+
+
 /* Sidebar Section */
 #sidebar {
     grid-area: sidebar;
@@ -148,6 +200,7 @@ main{
 
 .video-grid > h1 {
     font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .video-grid > h2 {
