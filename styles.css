@@ -119,7 +119,7 @@ main{
     justify-content: end;
 }
 
-.video-details > ul >li{
+.video-details > ul >li {
     align-items: center;
     column-gap: 5px;
     display: grid;
@@ -139,7 +139,7 @@ main{
     margin-top: 20px;
 }
 
-.author{
+.author {
     display: grid;
     grid: repeat(2,1fr) / 60px 1fr;
 }
