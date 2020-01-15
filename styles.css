@@ -101,7 +101,7 @@ main{
     width: 100%;
 }
 
-#sub-video-heading {
+.sub-video-heading {
     font-size: 2rem; /*20px*/
     font-weight: 400;
     margin-top: 20px;
