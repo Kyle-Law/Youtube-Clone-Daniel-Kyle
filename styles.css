@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-html,body {
-  height:100%;
+html, body {
+  height: 100%;
 }
 
 html {
@@ -21,7 +21,7 @@ html {
 
 nav {
   display: grid;
-  grid: 56px 1fr / 100px 1fr repeat(3,56px);
+  grid: 56px 1fr / 100px 1fr repeat(3, 56px);
   width: 100%;
   grid-gap: 10px;
   align-items: center;
@@ -69,22 +69,20 @@ nav>img {
   width: 23px;
 }
 
-
 /* Main layout */
 main{
   display: grid;
   grid: 
-  'video video' max-content 
-  'sidebar sidebar' max-content
-  / 5fr 3fr;
-  
+    'video video' max-content
+    'sidebar sidebar' max-content
+    / 5fr 3fr;
 }
 
-@media (min-width:1000px) {
+@media (min-width: 1000px) {
   main {
     grid: 
-    'video sidebar' max-content
-    'video sidebar' max-content
+      'video sidebar' max-content
+      'video sidebar' max-content
     /5fr 3fr;
   }
 }
@@ -104,7 +102,7 @@ main{
 .video-details {
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .video-details > p {
@@ -115,7 +113,7 @@ main{
 .video-details > ul {
   column-gap: 5px;
   display: grid;
-  grid: 1fr/repeat(5,60px);
+  grid: 1fr/repeat(5, 60px);
   justify-content: end;
 }
 
@@ -123,7 +121,7 @@ main{
   align-items: center;
   column-gap: 5px;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   list-style: none;
 }
 
@@ -141,7 +139,7 @@ main{
 
 .author {
   display: grid;
-  grid: repeat(2,1fr) / 60px 1fr;
+  grid: repeat(2, 1fr) / 60px 1fr;
 }
 
 .author > img {
@@ -165,7 +163,7 @@ h4 {
   border-radius: 4px;
   color: white;
   font-size: 1.5rem;
-  padding:10px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -179,13 +177,13 @@ h4 {
 
 .video-grid {
   display: grid;
-  grid: repeat(2,max-content) 1fr / 1fr 3fr;
+  grid: repeat(2, max-content) 1fr / 1fr 3fr;
   grid-column-gap: 5px;
 }
 
-@media (min-width:1000px) {
+@media (min-width: 1000px) {
   .video-grid {
-    grid: repeat(2,max-content) 1fr / 1fr 2fr;
+    grid: repeat(2, max-content) 1fr / 1fr 2fr;
   }
 }
 
