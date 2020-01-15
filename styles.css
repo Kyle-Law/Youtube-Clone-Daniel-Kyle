@@ -123,7 +123,8 @@ main{
     align-items: center;
     column-gap: 5px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    /* grid-template-columns: repeat(2,1fr); */
+    grid: 1fr / repeat(2,1fr);
     list-style: none;
 }
 
@@ -141,7 +142,8 @@ main{
 
 .author {
     display: grid;
-    grid: repeat(2,1fr) / 60px 1fr;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: 60px 1fr;
 }
 
 .author > img{
